@@ -19,6 +19,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('en');
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const stored = localStorage.getItem('firmyx-lang') as Lang | null;
     if (stored === 'en' || stored === 'bg') {
       setLangState(stored);
@@ -27,7 +28,9 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const setLang = (l: Lang) => {
     setLangState(l);
-    localStorage.setItem('firmyx-lang', l);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('firmyx-lang', l);
+    }
   };
 
   const t = (key: TranslationKey): string => translations[lang][key];

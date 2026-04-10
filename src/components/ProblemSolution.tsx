@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { AlertTriangle, EyeOff, BarChart3, Sparkles, Shield, TrendingUp } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';

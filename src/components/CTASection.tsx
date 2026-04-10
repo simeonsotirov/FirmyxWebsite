@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useLanguage } from '@/lib/LanguageContext';
 import { APP_URL } from '@/lib/constants';
@@ -18,10 +18,10 @@ export default function CTASection() {
           {t('cta_sub')}
         </p>
         <a
-          href={`${APP_URL}/register`}
+          href={`${APP_URL}`}
           className="inline-flex items-center gap-2 px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-600 hover:bg-blue-50 shadow-2xl shadow-blue-900/30 transition-all hover:-translate-y-0.5"
         >
-          {t('cta_button')} →
+          {t('cta_button')} â†’
         </a>
 
         {/* Trust badges */}

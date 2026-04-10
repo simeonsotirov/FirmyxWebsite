@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import { Menu, Sun, Moon } from 'lucide-react';
@@ -67,14 +67,14 @@ export default function Header() {
               </button>
             )}
             <a
-              href={`${APP_URL}/register`}
+              href={`${APP_URL}`}
               className="px-4 py-2 text-sm font-semibold rounded-lg bg-blue-500 hover:bg-blue-600 text-white transition-colors shadow-sm"
             >
               {t('nav_cta')}
             </a>
           </div>
 
-          {/* Mobile hamburger — uses native <details> for iOS Safari compatibility */}
+          {/* Mobile hamburger â€” uses native <details> for iOS Safari compatibility */}
           <details className="relative md:hidden group">
             <summary className="list-none [&::-webkit-details-marker]:hidden p-3 -mr-2 text-gray-600 dark:text-gray-300 active:bg-gray-100 dark:active:bg-gray-800 rounded-lg cursor-pointer">
               <Menu size={24} className="group-open:hidden" />
@@ -111,7 +111,7 @@ export default function Header() {
                   </button>
                 </div>
                 <a
-                  href={`${APP_URL}/register`}
+                  href={`${APP_URL}`}
                   className="text-center px-4 py-2 text-sm font-semibold rounded-lg bg-blue-500 text-white"
                 >
                   {t('nav_cta')}

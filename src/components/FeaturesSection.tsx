@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { Activity, Bot, TrendingUp, GitBranch, FileText, Upload } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';

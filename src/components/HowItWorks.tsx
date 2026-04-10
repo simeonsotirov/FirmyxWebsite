@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { UserPlus, Upload, Zap } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';

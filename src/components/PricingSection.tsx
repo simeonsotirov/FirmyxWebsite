@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { Check } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
@@ -47,7 +47,7 @@ export default function PricingSection() {
               ))}
             </ul>
             <a
-              href={`${APP_URL}/register`}
+              href={`${APP_URL}`}
               className="block text-center px-6 py-3 rounded-xl font-semibold text-sm bg-white text-blue-600 hover:bg-blue-50 shadow-lg transition-all"
             >
               {t('pricing_cta_free')}

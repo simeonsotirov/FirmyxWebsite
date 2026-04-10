@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { ShieldCheck, Lock, Globe } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';

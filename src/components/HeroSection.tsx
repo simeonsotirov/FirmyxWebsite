@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { Play } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
@@ -27,7 +27,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href={`${APP_URL}/register`}
+                href={`${APP_URL}`}
                 className="px-6 py-3 text-base font-semibold rounded-xl bg-blue-500 hover:bg-blue-600 text-white shadow-lg shadow-blue-500/25 transition-all hover:shadow-blue-500/40 hover:-translate-y-0.5 text-center"
               >
                 {t('hero_cta')}
@@ -76,7 +76,7 @@ export default function HeroSection() {
                   <div className="w-full bg-blue-900/40 rounded-full h-2">
                     <div className="bg-blue-300 h-2 rounded-full" style={{ width: '84%' }} />
                   </div>
-                  <div className="text-xs text-blue-200 mt-1">Good · 12% improvement this quarter</div>
+                  <div className="text-xs text-blue-200 mt-1">Good Â· 12% improvement this quarter</div>
                 </div>
 
                 {/* Stats row */}

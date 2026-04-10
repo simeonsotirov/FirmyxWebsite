@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useLanguage } from '@/lib/LanguageContext';
 import { APP_URL } from '@/lib/constants';
@@ -56,11 +56,11 @@ export default function DemoSection() {
               <div className="flex items-center justify-between mb-5">
                 <div>
                   <div className="text-white font-bold text-sm">{t('demo_greeting')}</div>
-                  <div className="text-gray-500 text-xs mt-0.5">Q1 2026 · Last updated 2 min ago</div>
+                  <div className="text-gray-500 text-xs mt-0.5">Q1 2026 Â· Last updated 2 min ago</div>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="px-3 py-1.5 rounded-lg bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold">
-                    ↑ Score improved 6pts
+                    â†‘ Score improved 6pts
                   </div>
                   <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-xs font-bold">
                     A
@@ -133,7 +133,7 @@ export default function DemoSection() {
                   </div>
                   {[
                     { type: 'insight', text: 'Cash reserves are healthy. Consider reinvesting Q2 surplus.' },
-                    { type: 'alert', text: 'Accounts receivable up 18% — follow up on 3 overdue invoices.' },
+                    { type: 'alert', text: 'Accounts receivable up 18% â€” follow up on 3 overdue invoices.' },
                     { type: 'tip', text: 'Reducing SaaS spend by 15% could improve score by 4 pts.' },
                   ].map(({ type, text }, i) => (
                     <div
@@ -158,10 +158,10 @@ export default function DemoSection() {
         {/* CTA below demo */}
         <div className="mt-8 text-center">
           <a
-            href={`${APP_URL}/register`}
+            href={`${APP_URL}`}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-500/25 hover:-translate-y-0.5"
           >
-            {t('demo_cta')} →
+            {t('demo_cta')} â†’
           </a>
           <p className="mt-3 text-xs text-gray-500">{t('demo_no_cc')}</p>
         </div>

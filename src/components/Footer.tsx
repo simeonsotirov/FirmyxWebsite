@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { X, Globe, Mail } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#features" className="hover:text-white transition-colors">{t('footer_features')}</a></li>
               <li><a href="#faq" className="hover:text-white transition-colors">{t('footer_faq')}</a></li>
-              <li><a href={`${APP_URL}/register`} className="hover:text-white transition-colors">{t('footer_get_started')}</a></li>
+              <li><a href={`${APP_URL}`} className="hover:text-white transition-colors">{t('footer_get_started')}</a></li>
             </ul>
           </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
             <span className="text-xs">Bank-grade Security</span>
           </div>
           <div className="text-sm text-center">
-            © {year} Firmyx. {t('footer_rights')}
+            Â© {year} Firmyx. {t('footer_rights')}
           </div>
         </div>
       </div>

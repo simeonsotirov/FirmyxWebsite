@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import { Cookie } from 'lucide-react';
@@ -35,7 +35,7 @@ export default function CookieConsent() {
     <div
       role="dialog"
       aria-modal="false"
-      aria-label={isEn ? 'Cookie notice' : 'Уведомление за бисквитки'}
+      aria-label={isEn ? 'Cookie notice' : 'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð° Ð±Ð¸ÑÐºÐ²Ð¸Ñ‚ÐºÐ¸'}
       className="fixed bottom-0 left-0 right-0 z-[200] px-4 pb-4 sm:pb-6"
     >
       <div className="max-w-2xl mx-auto bg-gray-950 rounded-2xl shadow-2xl border border-gray-800 overflow-hidden">
@@ -47,12 +47,12 @@ export default function CookieConsent() {
 
             <div className="flex-1 min-w-0">
               <h2 className="text-sm font-semibold text-white mb-1">
-                {isEn ? 'We use essential cookies' : 'Използваме необходими бисквитки'}
+                {isEn ? 'We use essential cookies' : 'Ð˜Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¼Ðµ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¸ Ð±Ð¸ÑÐºÐ²Ð¸Ñ‚ÐºÐ¸'}
               </h2>
               <p className="text-xs text-gray-400 leading-relaxed mb-4">
                 {isEn
                   ? 'We use only strictly necessary cookies to ensure the platform functions properly, including authentication and security. We do not use tracking, analytics, or marketing cookies.'
-                  : 'Използваме само стриктно необходими бисквитки за нормалното функциониране на платформата, включително удостоверяване и сигурност. Не използваме бисквитки за проследяване, анализи или маркетинг.'}
+                  : 'Ð˜Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¼Ðµ ÑÐ°Ð¼Ð¾ ÑÑ‚Ñ€Ð¸ÐºÑ‚Ð½Ð¾ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¸ Ð±Ð¸ÑÐºÐ²Ð¸Ñ‚ÐºÐ¸ Ð·Ð° Ð½Ð¾Ñ€Ð¼Ð°Ð»Ð½Ð¾Ñ‚Ð¾ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð¸Ñ€Ð°Ð½Ðµ Ð½Ð° Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð°, Ð²ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÐµÐ»Ð½Ð¾ ÑƒÐ´Ð¾ÑÑ‚Ð¾Ð²ÐµÑ€ÑÐ²Ð°Ð½Ðµ Ð¸ ÑÐ¸Ð³ÑƒÑ€Ð½Ð¾ÑÑ‚. ÐÐµ Ð¸Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð¼Ðµ Ð±Ð¸ÑÐºÐ²Ð¸Ñ‚ÐºÐ¸ Ð·Ð° Ð¿Ñ€Ð¾ÑÐ»ÐµÐ´ÑÐ²Ð°Ð½Ðµ, Ð°Ð½Ð°Ð»Ð¸Ð·Ð¸ Ð¸Ð»Ð¸ Ð¼Ð°Ñ€ÐºÐµÑ‚Ð¸Ð½Ð³.'}
               </p>
 
               <div className="flex items-center gap-4">
@@ -67,14 +67,14 @@ export default function CookieConsent() {
                     href="/cookies"
                     className="hover:text-white transition-colors underline underline-offset-2"
                   >
-                    {isEn ? 'Cookie Policy' : 'Бисквитки'}
+                    {isEn ? 'Cookie Policy' : 'Ð‘Ð¸ÑÐºÐ²Ð¸Ñ‚ÐºÐ¸'}
                   </a>
-                  <span className="text-gray-700">·</span>
+                  <span className="text-gray-700">Â·</span>
                   <a
                     href="/privacy"
                     className="hover:text-white transition-colors underline underline-offset-2"
                   >
-                    {isEn ? 'Privacy Policy' : 'Поверителност'}
+                    {isEn ? 'Privacy Policy' : 'ÐŸÐ¾Ð²ÐµÑ€Ð¸Ñ‚ÐµÐ»Ð½Ð¾ÑÑ‚'}
                   </a>
                 </div>
               </div>

@@ -18,12 +18,31 @@ const LanguageContext = createContext<LanguageContextValue>({
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('en');
 
+  // Sync language from localStorage after mount (avoids hydration mismatch)
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    // Check URL param first (used by mobile language toggle)
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang');
+    if (urlLang === 'en' || urlLang === 'bg') {
+      setLangState(urlLang);
+      localStorage.setItem('firmyx-lang', urlLang);
+      // Clean URL without reload
+      window.history.replaceState({}, '', window.location.pathname);
+      return;
+    }
+
     const stored = localStorage.getItem('firmyx-lang') as Lang | null;
-    if (stored === 'en' || stored === 'bg') {
+    if (stored && (stored === 'en' || stored === 'bg')) {
       setLangState(stored);
     }
+
+    // Listen for native toggle from mobile menu
+    const onLangChange = (e: Event) => {
+      const next = (e as CustomEvent).detail as Lang;
+      if (next === 'en' || next === 'bg') setLangState(next);
+    };
+    window.addEventListener('firmyx-lang-change', onLangChange);
+    return () => window.removeEventListener('firmyx-lang-change', onLangChange);
   }, []);
 
   const setLang = (l: Lang) => {

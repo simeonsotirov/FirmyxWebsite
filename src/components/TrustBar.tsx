@@ -6,7 +6,7 @@ export default function TrustBar() {
   const { t } = useLanguage();
 
   const stats = [
-    { value: '269', label: t('trust_tests') },
+    { value: '418', label: t('trust_tests') },
     { value: '89%', label: t('trust_accuracy') },
     { value: '18', label: t('trust_industries') },
     { value: '94 sec', label: t('trust_setup') },

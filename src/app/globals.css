@@ -13,6 +13,18 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* Fix mobile touch delay on all interactive elements */
+  button, a, [role="button"] {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+
+  /* iOS Safari fix: force click events on all divs with onClick */
+  [onclick], details, summary {
+    cursor: pointer;
+  }
 }
 
 ::selection {

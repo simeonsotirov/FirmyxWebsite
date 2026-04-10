@@ -1,23 +1,12 @@
 /**
- * ─── HOW TO ADD YOUR LOGO ────────────────────────────────────────────────────
+ * Logo component — uses CSS (dark:hidden / dark:block) to switch between
+ * light and dark mode logos instantly, with zero JavaScript and no flash.
  *
- * 1. Copy your logo file (PNG, SVG, WebP, etc.) into the /public/ folder.
- *    Example: /public/logo.png
+ * Place your logo files in /public/:
+ *   /public/logo-light.png  ← shown on light backgrounds
+ *   /public/logo-dark.png   ← shown on dark backgrounds
  *
- * 2. In the <Image> tag below, change:
- *      src="/YOUR-LOGO-FILE.png"   ← your file name
- *      width={160}                 ← adjust to your logo's natural width
- *      height={40}                 ← adjust to your logo's natural height
- *      alt="Firmyx"                ← your brand name for accessibility
- *
- * 3. The `size` prop controls the rendered height:
- *      sm  → h-7  (28 px)  — used in the Footer
- *      md  → h-9  (36 px)  — used in the Header
- *      lg  → h-11 (44 px)  — available for hero usage
- *
- * That's it — no other changes are needed. The logo will appear everywhere
- * automatically (Header, Footer, and any other place Logo is imported).
- * ─────────────────────────────────────────────────────────────────────────────
+ * Size prop: sm (44px), md (52px), lg (64px)
  */
 
 import Image from 'next/image';
@@ -28,22 +17,27 @@ interface LogoProps {
 }
 
 export default function Logo({ size = 'md', className = '' }: LogoProps) {
-  const heightClass = { sm: 'h-7', md: 'h-9', lg: 'h-11' }[size];
+  const heightClass = { sm: 'h-11', md: 'h-13', lg: 'h-16' }[size];
 
   return (
     <span className={`inline-flex items-center select-none ${className}`}>
-      {/*
-       * ↓↓↓  PASTE YOUR LOGO HERE  ↓↓↓
-       * Replace the src, width, height, and alt values below.
-       * Keep priority on the header logo so it loads with no delay.
-       */}
+      {/* Light mode logo — hidden in dark mode */}
       <Image
-        src="/logo.png"          // ← change to your file, e.g. /logo.svg
+        src="/logo-light.png"
         alt="Firmyx"
-        width={160}              // ← set to your logo's natural pixel width
-        height={40}              // ← set to your logo's natural pixel height
+        width={160}
+        height={40}
         priority
-        className={`${heightClass} w-auto object-contain`}
+        className={`${heightClass} w-auto object-contain block dark:hidden`}
+      />
+      {/* Dark mode logo — hidden in light mode */}
+      <Image
+        src="/logo-dark.png"
+        alt="Firmyx"
+        width={160}
+        height={40}
+        priority
+        className={`${heightClass} w-auto object-contain hidden dark:block`}
       />
     </span>
   );

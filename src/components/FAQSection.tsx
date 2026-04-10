@@ -1,12 +1,10 @@
 'use client';
 
-import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 
 export default function FAQSection() {
   const { t } = useLanguage();
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
     { q: t('faq_q1'), a: t('faq_a1') },
@@ -32,36 +30,23 @@ export default function FAQSection() {
 
         <div className="space-y-3">
           {faqs.map(({ q, a }, idx) => (
-            <div
+            <details
               key={idx}
-              className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden"
+              className="group bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden"
             >
-              <button
-                onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                className="w-full flex items-center justify-between px-6 py-4 text-left group"
-              >
-                <span className="font-semibold text-gray-900 dark:text-white group-hover:text-blue-500 transition-colors">
+              <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span className="font-semibold text-gray-900 dark:text-white group-open:text-blue-500 transition-colors">
                   {q}
                 </span>
                 <ChevronDown
                   size={18}
-                  className={`flex-shrink-0 text-gray-400 transition-transform duration-300 ${
-                    openIndex === idx ? 'rotate-180 text-blue-500' : ''
-                  }`}
+                  className="flex-shrink-0 text-gray-400 transition-transform duration-300 group-open:rotate-180 group-open:text-blue-500"
                 />
-              </button>
-              <div
-                className={`grid transition-all duration-300 ease-in-out ${
-                  openIndex === idx ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
-                }`}
-              >
-                <div className="overflow-hidden">
-                  <div className="px-6 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-4">
-                    {a}
-                  </div>
-                </div>
+              </summary>
+              <div className="px-6 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-4">
+                {a}
               </div>
-            </div>
+            </details>
           ))}
         </div>
       </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { Play, Star } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 
 export default function HeroSection() {
@@ -38,16 +38,6 @@ export default function HeroSection() {
                 <Play size={16} className="fill-current" />
                 {t('hero_secondary')}
               </a>
-            </div>
-
-            {/* Social proof */}
-            <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
-                ))}
-              </div>
-              <span>4.8/5 from 200+ reviews</span>
             </div>
           </div>
 

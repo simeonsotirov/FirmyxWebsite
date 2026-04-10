@@ -58,17 +58,17 @@ export const translations = {
     hiw_step3_desc: 'Your AI advisor analyzes everything and delivers your financial health score instantly.',
 
     // Testimonials
-    testimonials_heading: 'Real results from real businesses',
-    testimonials_sub: 'Verified customers on what changed after switching to Firmyx.',
-    testimonial_1_quote: 'Firmyx replaced three separate tools for us. The 12-month forecast alone saved us from a cash crisis we never would have seen coming — it paid for itself in the first week.',
-    testimonial_1_name: 'Sarah Mitchell',
-    testimonial_1_role: 'CFO, Nexgen Retail',
-    testimonial_2_quote: "I used to dread our monthly numbers. Now I log in every morning. The AI advisor explains everything in plain English — no accountant needed. Our investors love the PDF reports.",
-    testimonial_2_name: 'Daniel Okafor',
-    testimonial_2_role: 'Founder & CEO, BuildFast Agency',
-    testimonial_3_quote: 'We manage 8 clinic locations. Having a consolidated financial health score per location plus a rollup view is something we never had before. Absolutely game-changing for us.',
-    testimonial_3_name: 'Lena Kowalski',
-    testimonial_3_role: 'Operations Director, MediCore Clinics',
+    testimonials_heading: 'Early Access Feedback',
+    testimonials_sub: 'Beta testers sharing what they discovered during early testing.',
+    testimonial_1_quote: 'The health score gave us clarity we never had. We spotted a cash flow issue two months before it would have hit us.',
+    testimonial_1_name: 'S.M.',
+    testimonial_1_role: 'Beta tester · Retail sector',
+    testimonial_2_quote: "I finally understand our monthly numbers without needing an accountant to translate them for me.",
+    testimonial_2_name: 'D.O.',
+    testimonial_2_role: 'Beta tester · Agency owner',
+    testimonial_3_quote: "Managing multiple locations was chaos. Now I see each one's health score at a glance.",
+    testimonial_3_name: 'L.K.',
+    testimonial_3_role: 'Beta tester · Healthcare',
 
     // Pricing
     pricing_heading: 'Simple, transparent pricing',
@@ -88,6 +88,13 @@ export const translations = {
     pricing_pro_price: '$29',
     pricing_enterprise_price: 'From $99',
     pricing_pro_yearly: 'or $290/year (save 17%)',
+    pricing_free_note: 'No credit card required. Forever free.',
+    pricing_free_f1: 'Full financial health score (0–100)',
+    pricing_free_f2: '12-month AI-powered forecast',
+    pricing_free_f3: 'AI financial advisor',
+    pricing_free_f4: 'One-click PDF reports',
+    pricing_coming_soon: 'Coming Soon',
+    pricing_coming_soon_desc: 'Paid plans with advanced features are coming soon. Start free today and upgrade when ready.',
 
     // FAQ
     faq_heading: 'Frequently Asked Questions',
@@ -113,6 +120,28 @@ export const translations = {
     cta_heading: 'Your first financial health check is free.',
     cta_sub: 'Set up in 94 seconds. No credit card. Cancel anytime.',
     cta_button: 'Create Free Account',
+
+    // Problem → Solution
+    problem_heading: 'The Problem',
+    problem_sub: 'Running a business without financial clarity is like driving blindfolded',
+    problem_1_title: 'Financial Uncertainty',
+    problem_1_desc: 'You make decisions based on gut feeling because you lack real-time financial insights.',
+    problem_2_title: 'Hidden Risks',
+    problem_2_desc: 'Cash flow issues and financial risks go unnoticed until it is too late to act.',
+    problem_3_title: 'No Actionable Data',
+    problem_3_desc: 'Spreadsheets and accounting reports tell you what happened, not what to do next.',
+    solution_heading: 'The Solution',
+    solution_sub: 'Firmyx gives you AI-powered clarity in under 2 minutes',
+
+    // Trust Section
+    trust_section_heading: 'Your Data Is Safe With Us',
+    trust_section_sub: 'Built with security and privacy at the core',
+    trust_no_tracking: 'No tracking, no ads',
+    trust_no_tracking_desc: 'We never sell your data or show ads. Your finances are your business.',
+    trust_encrypted: 'Your data is encrypted',
+    trust_encrypted_desc: 'Bank-grade AES-256 encryption protects your data at rest and in transit.',
+    trust_gdpr: 'GDPR compliant',
+    trust_gdpr_desc: 'Full compliance with European data protection regulations. Delete your data anytime.',
 
     // Footer
     footer_desc: 'AI-powered financial intelligence for modern businesses.',
@@ -185,17 +214,17 @@ export const translations = {
     hiw_step3_desc: 'AI съветникът ти анализира всичко и веднага предоставя финансовата ти оценка.',
 
     // Testimonials
-    testimonials_heading: 'Реални резултати от реални бизнеси',
-    testimonials_sub: 'Верифицирани клиенти за това, което се промени след преминаване към Firmyx.',
-    testimonial_1_quote: 'Firmyx замени три отделни инструмента за нас. Само 12-месечната прогноза ни спаси от криза с паричния поток, която никога нямаше да видим идваща.',
-    testimonial_1_name: 'Sarah Mitchell',
-    testimonial_1_role: 'CFO, Nexgen Retail',
-    testimonial_2_quote: 'Преди се страхувах от месечните числа. Сега влизам всяка сутрин. AI съветникът обяснява всичко на обикновен език — без счетоводител. Инвеститорите ни обичат PDF докладите.',
-    testimonial_2_name: 'Daniel Okafor',
-    testimonial_2_role: 'Основател и CEO, BuildFast Agency',
-    testimonial_3_quote: 'Управляваме 8 клиники. Да имаме консолидирана финансова оценка на здравето за всяко място е нещо, което никога преди не сме имали.',
-    testimonial_3_name: 'Lena Kowalski',
-    testimonial_3_role: 'Директор операции, MediCore Clinics',
+    testimonials_heading: 'Обратна връзка от ранен достъп',
+    testimonials_sub: 'Бета тестери споделят какво откриха по време на ранното тестване.',
+    testimonial_1_quote: 'Здравната оценка ни даде яснота, която никога не сме имали. Забелязахме проблем с паричния поток два месеца преди да ни удари.',
+    testimonial_1_name: 'S.M.',
+    testimonial_1_role: 'Бета тестер · Търговия',
+    testimonial_2_quote: 'Най-накрая разбирам месечните ни числа, без да ми трябва счетоводител да ми ги превежда.',
+    testimonial_2_name: 'D.O.',
+    testimonial_2_role: 'Бета тестер · Собственик на агенция',
+    testimonial_3_quote: 'Управлението на множество локации беше хаос. Сега виждам здравната оценка на всяка една с един поглед.',
+    testimonial_3_name: 'L.K.',
+    testimonial_3_role: 'Бета тестер · Здравеопазване',
 
     // Pricing
     pricing_heading: 'Прости и прозрачни цени',
@@ -215,6 +244,13 @@ export const translations = {
     pricing_pro_price: '$29',
     pricing_enterprise_price: 'От $99',
     pricing_pro_yearly: 'или $290/год. (спести 17%)',
+    pricing_free_note: 'Не е нужна кредитна карта. Завинаги безплатно.',
+    pricing_free_f1: 'Пълна оценка на финансовото здраве (0–100)',
+    pricing_free_f2: '12-месечна AI прогноза',
+    pricing_free_f3: 'AI финансов съветник',
+    pricing_free_f4: 'PDF доклади с едно кликване',
+    pricing_coming_soon: 'Очаквайте скоро',
+    pricing_coming_soon_desc: 'Платените планове с разширени функции идват скоро. Започни безплатно и надгради, когато си готов.',
 
     // FAQ
     faq_heading: 'Често задавани въпроси',
@@ -240,6 +276,28 @@ export const translations = {
     cta_heading: 'Първата ти финансова проверка е безплатна.',
     cta_sub: 'Настройка за 94 секунди. Без кредитна карта. Откажи по всяко време.',
     cta_button: 'Създай безплатен акаунт',
+
+    // Problem → Solution
+    problem_heading: 'Проблемът',
+    problem_sub: 'Да управляваш бизнес без финансова яснота е като да шофираш със завързани очи',
+    problem_1_title: 'Финансова несигурност',
+    problem_1_desc: 'Взимаш решения на инстинкт, защото ти липсват финансови данни в реално време.',
+    problem_2_title: 'Скрити рискове',
+    problem_2_desc: 'Проблеми с паричния поток и финансови рискове остават незабелязани, докато не стане твърде късно.',
+    problem_3_title: 'Липса на данни за действие',
+    problem_3_desc: 'Таблиците и счетоводните доклади казват какво се е случило, не какво да направиш.',
+    solution_heading: 'Решението',
+    solution_sub: 'Firmyx ти дава AI-базирана яснота за под 2 минути',
+
+    // Trust Section
+    trust_section_heading: 'Данните ти са в безопасност при нас',
+    trust_section_sub: 'Изграден със сигурност и поверителност в основата',
+    trust_no_tracking: 'Без проследяване, без реклами',
+    trust_no_tracking_desc: 'Никога не продаваме данните ти и не показваме реклами. Финансите ти са само твоя работа.',
+    trust_encrypted: 'Данните ти са криптирани',
+    trust_encrypted_desc: 'AES-256 криптиране от банков клас защитава данните ти в покой и при пренос.',
+    trust_gdpr: 'GDPR съвместимост',
+    trust_gdpr_desc: 'Пълно съответствие с европейските регулации за защита на данните. Изтрий данните си по всяко време.',
 
     // Footer
     footer_desc: 'AI финансово разузнаване за съвременния бизнес.',

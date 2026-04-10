@@ -16,7 +16,6 @@ const jsonLd = {
       '@id': 'https://firmyx.com/#organization',
       name: 'Firmyx',
       url: 'https://firmyx.com',
-      logo: 'https://firmyx.com/logo.svg',
       contactPoint: {
         '@type': 'ContactPoint',
         email: 'support@firmyx.com',
@@ -96,6 +95,12 @@ export const metadata: Metadata = {
     canonical: '/',
   },
 
+  icons: {
+    icon: [],
+    shortcut: [],
+    apple: [],
+  },
+
   openGraph: {
     title: 'Firmyx — Know exactly where your business stands',
     description:
@@ -121,10 +126,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <head>
+        {/* Blocking theme script — runs before any CSS paints to prevent flash */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.classList.add(t);}catch(e){document.documentElement.classList.add('dark');}})()` }} />
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {/* Early language detection — set data-lang before React hydrates */}
+        <script
+          dangerouslySetInnerHTML={{ __html: `
+            try {
+              var sl = localStorage.getItem('firmyx-lang');
+              if (sl === 'bg') document.documentElement.setAttribute('data-lang', 'bg');
+            } catch(e) {}
+          `}}
         />
       </head>
       <body className={inter.className}>
@@ -135,6 +151,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <CookieConsent />
           </LanguageProvider>
         </ThemeProvider>
+        {/* Native mobile menu actions — direct attachment */}
+        <script
+          dangerouslySetInnerHTML={{ __html: `
+            (function() {
+              function bind() {
+                var themeBtns = document.querySelectorAll('[data-mobile-action="toggle-theme"]');
+                for (var j = 0; j < themeBtns.length; j++) {
+                  themeBtns[j].onclick = function() {
+                    var html = document.documentElement;
+                    var isDark = html.classList.contains('dark');
+                    html.classList.toggle('dark');
+                    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+                  };
+                }
+              }
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', bind);
+              } else {
+                bind();
+              }
+            })();
+          `}}
+        />
       </body>
     </html>
   );

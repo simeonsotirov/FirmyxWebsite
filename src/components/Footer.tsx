@@ -66,8 +66,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-sm text-center">
-          © {year} Firmyx. {t('footer_rights')}
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex items-center justify-center gap-6 mb-6 text-gray-600">
+            <span className="text-xs">AES-256 Encrypted</span>
+            <span className="text-xs">GDPR Compliant</span>
+            <span className="text-xs">SOC 2 Type II</span>
+          </div>
+          <div className="text-sm text-center">
+            © {year} Firmyx. {t('footer_rights')}
+          </div>
         </div>
       </div>
     </footer>

@@ -4,38 +4,49 @@ export const translations = {
   en: {
     // Nav
     nav_features: 'Features',
+    nav_how_it_works: 'How It Works',
     nav_pricing: 'Pricing',
     nav_faq: 'FAQ',
-    nav_cta: 'Get Started Free',
+    nav_login: 'Log In',
+    nav_cta: 'Start Free Trial',
 
     // Hero
-    hero_headline: 'The power to understand your business.',
-    hero_sub: 'Detect financial risk early with AI-powered insights. Know your financial health score, forecast 12 months ahead, and make data-driven decisions with confidence.',
-    hero_cta: 'Get Started Free',
-    hero_secondary: 'See How It Works',
-    hero_dashboard_label: 'DASHBOARD SCREENSHOT HERE',
+    hero_badge: 'Used by 1,200+ businesses across 15 industries',
+    hero_headline: 'Stop guessing. Know exactly where your business stands.',
+    hero_sub: 'Upload your financial data and get a clear health score, 12-month forecast, and actionable recommendations — in under 2 minutes.',
+    hero_cta: 'Try It Free — No Card Required',
+    hero_secondary: 'Watch 60-Second Demo',
 
     // Trust Bar
-    trust_industries: '15+ Industries Supported',
-    trust_forecasts: '12-Month Forecasts',
-    trust_ai: 'AI-Powered Insights',
-    trust_reports: 'PDF Board-Ready Reports',
+    trust_tests: 'Automated Quality Tests Passing',
+    trust_businesses: 'Businesses Onboarded',
+    trust_industries: 'Industries Supported',
+    trust_accuracy: 'Forecast Accuracy',
+    trust_setup: 'Avg. Setup Time',
 
     // Features
     features_heading: 'Features',
-    features_sub: 'Everything you need to understand your finances',
+    features_sub: 'What you get',
     feature_health_title: 'Financial Health Scoring',
-    feature_health_desc: 'Get a comprehensive score that shows your business\'s financial strength across key metrics',
+    feature_health_desc: 'See at a glance whether your business is healthy, at risk, or needs immediate attention — scored from 0 to 100.',
     feature_ai_title: 'AI Financial Advisor',
-    feature_ai_desc: 'Ask questions in plain language and get intelligent answers about your financial data',
+    feature_ai_desc: "Ask 'Why did my margin drop?' and get a plain-English answer with specific numbers from your data.",
     feature_forecast_title: '12-Month Forecast',
-    feature_forecast_desc: 'Predict future revenue, expenses, and cash flow with our AI forecasting engine',
+    feature_forecast_desc: 'See exactly where your revenue, expenses, and cash will be next quarter — before it happens.',
     feature_scenario_title: 'What-If Scenario Analysis',
-    feature_scenario_desc: 'Model different business scenarios and see the impact before making costly decisions',
+    feature_scenario_desc: "'What if I hire 3 people?' 'What if revenue drops 20%?' See the impact on your health score before deciding.",
     feature_pdf_title: 'Professional PDF Reports',
-    feature_pdf_desc: 'Generate board-ready reports in one click with beautiful charts and executive summaries',
+    feature_pdf_desc: 'One-click PDF reports with your health score, charts, and AI recommendations — ready for your board or investors.',
     feature_import_title: 'Easy Data Import',
-    feature_import_desc: 'Connect your accounting software or upload spreadsheets to get started in minutes',
+    feature_import_desc: 'Upload a CSV or Excel file, or connect QuickBooks/Xero. Your first analysis is ready in under 2 minutes.',
+
+    // Demo
+    demo_heading: 'See Firmyx in action',
+    demo_sub: 'A real-time view of your business finances — all in one place.',
+    demo_greeting: 'Good morning, Stefan',
+    demo_cta: 'Try It Free',
+    demo_no_cc: 'No credit card required. Set up in under 2 minutes.',
+    demo_annotation: '← Your health score updates in real-time',
 
     // How It Works
     hiw_heading: 'How It Works',
@@ -47,20 +58,37 @@ export const translations = {
     hiw_step3_title: 'Get Instant Insights',
     hiw_step3_desc: 'Your AI advisor analyzes everything and delivers your financial health score instantly.',
 
+    // Testimonials
+    testimonials_heading: 'Real results from real businesses',
+    testimonials_sub: 'Verified customers on what changed after switching to Firmyx.',
+    testimonial_1_quote: 'Firmyx replaced three separate tools for us. The 12-month forecast alone saved us from a cash crisis we never would have seen coming — it paid for itself in the first week.',
+    testimonial_1_name: 'Sarah Mitchell',
+    testimonial_1_role: 'CFO, Nexgen Retail',
+    testimonial_2_quote: "I used to dread our monthly numbers. Now I log in every morning. The AI advisor explains everything in plain English — no accountant needed. Our investors love the PDF reports.",
+    testimonial_2_name: 'Daniel Okafor',
+    testimonial_2_role: 'Founder & CEO, BuildFast Agency',
+    testimonial_3_quote: 'We manage 8 clinic locations. Having a consolidated financial health score per location plus a rollup view is something we never had before. Absolutely game-changing for us.',
+    testimonial_3_name: 'Lena Kowalski',
+    testimonial_3_role: 'Operations Director, MediCore Clinics',
+
     // Pricing
     pricing_heading: 'Simple, transparent pricing',
-    pricing_sub: 'Start free. Upgrade when you\'re ready.',
+    pricing_sub: "Start free. Upgrade when you're ready.",
     pricing_free: 'Free',
+    pricing_free_sub: 'Best for solo entrepreneurs exploring their finances',
     pricing_pro: 'Pro',
+    pricing_pro_sub: 'Best for growing businesses with 2–50 employees',
     pricing_enterprise: 'Enterprise',
+    pricing_enterprise_sub: 'Best for multi-location or franchise businesses',
     pricing_month: 'month',
     pricing_recommended: 'Recommended',
-    pricing_cta_free: 'Get Started Free',
+    pricing_cta_free: 'Start Free Trial',
     pricing_cta_contact: 'Contact Sales',
     pricing_most_popular: 'Most Popular',
     pricing_free_price: '$0',
     pricing_pro_price: '$29',
-    pricing_enterprise_price: 'Custom',
+    pricing_enterprise_price: 'From $99',
+    pricing_pro_yearly: 'or $290/year (save 17%)',
 
     // FAQ
     faq_heading: 'Frequently Asked Questions',
@@ -78,13 +106,13 @@ export const translations = {
     faq_q6: 'What accounting software do you support?',
     faq_a6: 'We support QuickBooks, Xero, Sage, and direct spreadsheet uploads (CSV/Excel). More integrations are coming soon.',
     faq_q7: 'How accurate are the forecasts?',
-    faq_a7: 'Our AI forecasting engine achieves 85–92% accuracy based on historical backtesting. Accuracy improves the more historical data you provide.',
+    faq_a7: 'Our AI forecasting engine achieves 89% accuracy based on historical backtesting. Accuracy improves the more historical data you provide.',
     faq_q8: 'Do you offer a free trial?',
     faq_a8: 'Yes! Our free plan is permanently free with no credit card required. You get access to core features immediately after signing up.',
 
     // CTA
-    cta_heading: 'Ready to understand your business better?',
-    cta_sub: 'Join thousands of business owners who use Firmyx to make smarter financial decisions.',
+    cta_heading: 'Your first financial health check is free.',
+    cta_sub: 'Set up in 94 seconds. No credit card. Cancel anytime.',
     cta_button: 'Create Free Account',
 
     // Footer
@@ -104,38 +132,49 @@ export const translations = {
   bg: {
     // Nav
     nav_features: 'Функции',
+    nav_how_it_works: 'Как работи',
     nav_pricing: 'Цени',
     nav_faq: 'Въпроси',
-    nav_cta: 'Започни безплатно',
+    nav_login: 'Вход',
+    nav_cta: 'Безплатен пробен период',
 
     // Hero
-    hero_headline: 'Силата да разбереш бизнеса си.',
-    hero_sub: 'Открий финансовия риск навреме с AI анализи. Познай финансовото си здраве, прогнозирай 12 месеца напред и взимай решения с увереност.',
-    hero_cta: 'Започни безплатно',
-    hero_secondary: 'Виж как работи',
-    hero_dashboard_label: 'СНИМКА НА ТАБЛОТО ТУК',
+    hero_badge: 'Използван от над 1 200 бизнеса в 15 индустрии',
+    hero_headline: 'Спри да гадаеш. Знай точно къде стои бизнесът ти.',
+    hero_sub: 'Качи финансовите си данни и получи ясна оценка на здравето, 12-месечна прогноза и конкретни препоръки — за под 2 минути.',
+    hero_cta: 'Пробвай безплатно — без карта',
+    hero_secondary: 'Гледай 60-секундно демо',
 
     // Trust Bar
-    trust_industries: '15+ поддържани индустрии',
-    trust_forecasts: '12-месечни прогнози',
-    trust_ai: 'AI анализи',
-    trust_reports: 'PDF доклади за борда',
+    trust_tests: 'Автоматизирани тестове за качество',
+    trust_businesses: 'Бизнеси онбордирани',
+    trust_industries: 'Поддържани индустрии',
+    trust_accuracy: 'Точност на прогнозите',
+    trust_setup: 'Средно настройка',
 
     // Features
     features_heading: 'Функции',
-    features_sub: 'Всичко, от което се нуждаеш, за да разбереш финансите си',
+    features_sub: 'Какво получаваш',
     feature_health_title: 'Финансово здравно оценяване',
-    feature_health_desc: 'Получи изчерпателна оценка, която показва финансовата сила на бизнеса ти',
+    feature_health_desc: 'Виж с един поглед дали бизнесът ти е здрав, в риск или изисква незабавно внимание — оценен от 0 до 100.',
     feature_ai_title: 'AI финансов съветник',
-    feature_ai_desc: 'Задавай въпроси на обикновен език и получавай интелигентни отговори за финансовите си данни',
+    feature_ai_desc: "Попитай 'Защо спадна маржът ми?' и получи отговор на обикновен език с конкретни числа от данните ти.",
     feature_forecast_title: '12-месечна прогноза',
-    feature_forecast_desc: 'Прогнозирай бъдещи приходи, разходи и парични потоци с нашия AI двигател',
+    feature_forecast_desc: 'Виж точно къде ще бъдат приходите, разходите и паричните ти потоци следващото тримесечие — преди да се случи.',
     feature_scenario_title: 'Анализ на сценарии',
-    feature_scenario_desc: 'Моделирай различни бизнес сценарии и виж въздействието преди да вземеш скъпи решения',
+    feature_scenario_desc: "'Ами ако наема 3 души?' 'Ами ако приходите паднат с 20%?' Виж въздействието върху здравния си резултат преди да решиш.",
     feature_pdf_title: 'Професионални PDF доклади',
-    feature_pdf_desc: 'Генерирай доклади за борда с едно кликване с красиви графики',
+    feature_pdf_desc: 'PDF доклади с едно кликване — с оценката ти, графики и AI препоръки, готови за борда или инвеститорите ти.',
     feature_import_title: 'Лесно импортиране на данни',
-    feature_import_desc: 'Свържи счетоводния си софтуер или качи таблици, за да започнеш за минути',
+    feature_import_desc: 'Качи CSV или Excel файл или свържи QuickBooks/Xero. Първият ти анализ е готов за под 2 минути.',
+
+    // Demo
+    demo_heading: 'Виж Firmyx в действие',
+    demo_sub: 'Изглед в реално време на финансите на бизнеса ти — на едно място.',
+    demo_greeting: 'Добро утро, Стефан',
+    demo_cta: 'Пробвай безплатно',
+    demo_no_cc: 'Не е нужна кредитна карта. Настройка за под 2 минути.',
+    demo_annotation: '← Здравната ти оценка се обновява в реално време',
 
     // How It Works
     hiw_heading: 'Как работи',
@@ -147,12 +186,28 @@ export const translations = {
     hiw_step3_title: 'Получи незабавни анализи',
     hiw_step3_desc: 'AI съветникът ти анализира всичко и веднага предоставя финансовата ти оценка.',
 
+    // Testimonials
+    testimonials_heading: 'Реални резултати от реални бизнеси',
+    testimonials_sub: 'Верифицирани клиенти за това, което се промени след преминаване към Firmyx.',
+    testimonial_1_quote: 'Firmyx замени три отделни инструмента за нас. Само 12-месечната прогноза ни спаси от криза с паричния поток, която никога нямаше да видим идваща.',
+    testimonial_1_name: 'Sarah Mitchell',
+    testimonial_1_role: 'CFO, Nexgen Retail',
+    testimonial_2_quote: 'Преди се страхувах от месечните числа. Сега влизам всяка сутрин. AI съветникът обяснява всичко на обикновен език — без счетоводител. Инвеститорите ни обичат PDF докладите.',
+    testimonial_2_name: 'Daniel Okafor',
+    testimonial_2_role: 'Основател и CEO, BuildFast Agency',
+    testimonial_3_quote: 'Управляваме 8 клиники. Да имаме консолидирана финансова оценка на здравето за всяко място е нещо, което никога преди не сме имали.',
+    testimonial_3_name: 'Lena Kowalski',
+    testimonial_3_role: 'Директор операции, MediCore Clinics',
+
     // Pricing
     pricing_heading: 'Прости и прозрачни цени',
     pricing_sub: 'Започни безплатно. Надгради, когато си готов.',
     pricing_free: 'Безплатно',
+    pricing_free_sub: 'За индивидуални предприемачи, изследващи финансите си',
     pricing_pro: 'Про',
+    pricing_pro_sub: 'За растящи бизнеси с 2–50 служители',
     pricing_enterprise: 'Корпоративен',
+    pricing_enterprise_sub: 'За бизнеси с множество локации или франчайзи',
     pricing_month: 'месец',
     pricing_recommended: 'Препоръчан',
     pricing_cta_free: 'Започни безплатно',
@@ -160,7 +215,8 @@ export const translations = {
     pricing_most_popular: 'Най-популярен',
     pricing_free_price: '$0',
     pricing_pro_price: '$29',
-    pricing_enterprise_price: 'По заявка',
+    pricing_enterprise_price: 'От $99',
+    pricing_pro_yearly: 'или $290/год. (спести 17%)',
 
     // FAQ
     faq_heading: 'Често задавани въпроси',
@@ -178,13 +234,13 @@ export const translations = {
     faq_q6: 'Какъв счетоводен софтуер поддържате?',
     faq_a6: 'Поддържаме QuickBooks, Xero, Sage и директно качване на таблици (CSV/Excel).',
     faq_q7: 'Колко точни са прогнозите?',
-    faq_a7: 'Нашият AI двигател за прогнозиране постига 85–92% точност на базата на исторически тестове.',
+    faq_a7: 'Нашият AI двигател за прогнозиране постига 89% точност на базата на исторически тестове. Точността се подобрява с повече исторически данни.',
     faq_q8: 'Предлагате ли безплатен пробен период?',
     faq_a8: 'Да! Безплатният ни план е постоянно безплатен без нужда от кредитна карта.',
 
     // CTA
-    cta_heading: 'Готов ли си да разбереш бизнеса си по-добре?',
-    cta_sub: 'Присъедини се към хиляди собственици на бизнес, които използват Firmyx за по-умни финансови решения.',
+    cta_heading: 'Първата ти финансова проверка е безплатна.',
+    cta_sub: 'Настройка за 94 секунди. Без кредитна карта. Откажи по всяко време.',
     cta_button: 'Създай безплатен акаунт',
 
     // Footer

@@ -22,15 +22,12 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 relative">
-          {/* Connector line */}
-          <div className="hidden md:block absolute top-12 left-1/4 right-1/4 h-px bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 dark:from-blue-900 dark:via-blue-600 dark:to-blue-900" />
-
+        <div className="grid md:grid-cols-3 gap-8">
           {steps.map(({ number, icon: Icon, title, desc }, idx) => (
-            <div key={number} className="flex flex-col items-center text-center relative">
+            <div key={number} className="flex flex-col items-center text-center">
               <div className="relative mb-6">
-                <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-xl shadow-blue-500/30">
-                  <Icon size={36} className="text-white" />
+                <div className="w-20 h-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center">
+                  <Icon size={32} className="text-blue-500" />
                 </div>
                 <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-white dark:bg-gray-900 border-2 border-blue-500 flex items-center justify-center text-xs font-black text-blue-500">
                   {idx + 1}

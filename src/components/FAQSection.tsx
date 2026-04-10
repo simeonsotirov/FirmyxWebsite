@@ -51,12 +51,14 @@ export default function FAQSection() {
                 />
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === idx ? 'max-h-96' : 'max-h-0'
+                className={`grid transition-all duration-300 ease-in-out ${
+                  openIndex === idx ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
                 }`}
               >
-                <div className="px-6 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-4">
-                  {a}
+                <div className="overflow-hidden">
+                  <div className="px-6 pb-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-4">
+                    {a}
+                  </div>
                 </div>
               </div>
             </div>

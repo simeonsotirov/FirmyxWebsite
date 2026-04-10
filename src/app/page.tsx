@@ -4,6 +4,7 @@ import TrustBar from '@/components/TrustBar';
 import FeaturesSection from '@/components/FeaturesSection';
 import HowItWorks from '@/components/HowItWorks';
 import DemoSection from '@/components/DemoSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 import PricingSection from '@/components/PricingSection';
 import FAQSection from '@/components/FAQSection';
 import CTASection from '@/components/CTASection';
@@ -18,6 +19,7 @@ export default function Home() {
       <FeaturesSection />
       <HowItWorks />
       <DemoSection />
+      <TestimonialsSection />
       <PricingSection />
       <FAQSection />
       <CTASection />

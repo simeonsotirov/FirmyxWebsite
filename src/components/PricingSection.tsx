@@ -9,12 +9,16 @@ export default function PricingSection() {
   const plans = [
     {
       name: t('pricing_free'),
+      sub: t('pricing_free_sub'),
       price: t('pricing_free_price'),
       period: t('pricing_month'),
+      yearlyNote: null,
       features: [
         '1 business profile',
         'Basic financial health score',
         '3-month forecast',
+        'Unlimited financial records',
+        'Email support',
         'Community support',
       ],
       cta: t('pricing_cta_free'),
@@ -24,12 +28,15 @@ export default function PricingSection() {
     },
     {
       name: t('pricing_pro'),
+      sub: t('pricing_pro_sub'),
       price: t('pricing_pro_price'),
       period: t('pricing_month'),
+      yearlyNote: t('pricing_pro_yearly'),
       features: [
-        '5 business profiles',
+        'Up to 10 business profiles',
         'Full AI financial advisor',
         '12-month forecast',
+        'Multi-year historical analysis',
         'What-if scenario analysis',
         'PDF report exports',
         'Priority email support',
@@ -41,8 +48,10 @@ export default function PricingSection() {
     },
     {
       name: t('pricing_enterprise'),
+      sub: t('pricing_enterprise_sub'),
       price: t('pricing_enterprise_price'),
-      period: null,
+      period: t('pricing_month'),
+      yearlyNote: null,
       features: [
         'Unlimited profiles',
         'Custom AI models',
@@ -86,9 +95,12 @@ export default function PricingSection() {
               )}
 
               <div className="mb-6">
-                <h3 className={`text-xl font-bold mb-2 ${plan.highlight ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
+                <h3 className={`text-xl font-bold mb-1 ${plan.highlight ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
                   {plan.name}
                 </h3>
+                <p className={`text-xs mb-4 leading-snug ${plan.highlight ? 'text-blue-200' : 'text-gray-500 dark:text-gray-400'}`}>
+                  {plan.sub}
+                </p>
                 <div className="flex items-baseline gap-1">
                   <span className={`text-4xl font-extrabold ${plan.highlight ? 'text-white' : 'text-gray-900 dark:text-white'}`}>
                     {plan.price}
@@ -99,6 +111,11 @@ export default function PricingSection() {
                     </span>
                   )}
                 </div>
+                {plan.yearlyNote && (
+                  <p className={`text-xs mt-1 ${plan.highlight ? 'text-blue-200' : 'text-gray-500 dark:text-gray-400'}`}>
+                    {plan.yearlyNote}
+                  </p>
+                )}
               </div>
 
               <ul className="flex-1 space-y-3 mb-8">
@@ -132,3 +149,4 @@ export default function PricingSection() {
     </section>
   );
 }
+

@@ -24,13 +24,13 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md'
-          : 'bg-transparent'
+          : 'bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="text-2xl font-extrabold bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
+          <a href="/" className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
             Firmyx
           </a>
 
@@ -38,6 +38,9 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               {t('nav_features')}
+            </a>
+            <a href="#how-it-works" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+              {t('nav_how_it_works')}
             </a>
             <a href="#pricing" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               {t('nav_pricing')}
@@ -61,10 +64,11 @@ export default function Header() {
             {mounted && (
               <button
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
-                aria-label="Toggle theme"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:border-blue-500 hover:text-blue-500 transition-all text-xs font-medium"
+                aria-label="Toggle dark mode"
               >
-                {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+                {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
+                <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
               </button>
             )}
 
@@ -94,6 +98,9 @@ export default function Header() {
             <a href="#features" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500">
               {t('nav_features')}
             </a>
+            <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500">
+              {t('nav_how_it_works')}
+            </a>
             <a href="#pricing" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500">
               {t('nav_pricing')}
             </a>
@@ -110,9 +117,11 @@ export default function Header() {
               {mounted && (
                 <button
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                  className="p-2 rounded-full text-gray-600 dark:text-gray-300"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 text-xs font-medium"
+                  aria-label="Toggle dark mode"
                 >
-                  {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+                  {theme === 'dark' ? <Sun size={14} /> : <Moon size={14} />}
+                  <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
                 </button>
               )}
               <a
@@ -128,3 +137,4 @@ export default function Header() {
     </header>
   );
 }
+

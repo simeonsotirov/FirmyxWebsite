@@ -1,5 +1,6 @@
 'use client';
 
+import { Play, Star } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 
 export default function HeroSection() {
@@ -12,12 +13,11 @@ export default function HeroSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-blue-400/10 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
           {/* Left: Text */}
           <div className="flex flex-col gap-6">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs font-semibold w-fit">
-              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-              AI-Powered Financial Intelligence
+              {t('hero_badge')}
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight">
@@ -36,25 +36,22 @@ export default function HeroSection() {
                 {t('hero_cta')}
               </a>
               <a
-                href="#how-it-works"
-                className="px-6 py-3 text-base font-semibold rounded-xl border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-500 transition-all text-center"
+                href="#demo"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold rounded-xl border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-blue-500 hover:text-blue-500 transition-all text-center"
               >
+                <Play size={16} className="fill-current" />
                 {t('hero_secondary')}
               </a>
             </div>
 
             {/* Social proof */}
-            <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-              <div className="flex -space-x-2">
-                {[...Array(4)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full border-2 border-white dark:border-gray-900"
-                    style={{ backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6'][i] }}
-                  />
+            <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <span>Trusted by 1,000+ businesses</span>
+              <span>4.8/5 from 200+ reviews</span>
             </div>
           </div>
 
@@ -126,11 +123,6 @@ export default function HeroSection() {
                     ))}
                   </div>
                 </div>
-
-                {/* Label */}
-                <div className="mt-4 text-center">
-                  <span className="text-xs text-gray-600 uppercase tracking-widest">{t('hero_dashboard_label')}</span>
-                </div>
               </div>
             </div>
 
@@ -144,3 +136,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

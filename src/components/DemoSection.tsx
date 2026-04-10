@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/lib/LanguageContext';
+import { APP_URL } from '@/lib/constants';
 
 export default function DemoSection() {
   const { t } = useLanguage();
@@ -24,7 +25,7 @@ export default function DemoSection() {
             <div className="w-3 h-3 rounded-full bg-yellow-400" />
             <div className="w-3 h-3 rounded-full bg-green-400" />
             <div className="flex-1 mx-4 px-3 py-1 rounded-md bg-white dark:bg-gray-700 text-gray-500 dark:text-gray-400 text-xs border border-gray-200 dark:border-gray-600">
-              app.firmyx.com/dashboard
+              app.firmyxapp.com/dashboard
             </div>
           </div>
 
@@ -157,7 +158,7 @@ export default function DemoSection() {
         {/* CTA below demo */}
         <div className="mt-8 text-center">
           <a
-            href="https://app.firmyx.com/register"
+            href={`${APP_URL}/register`}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-500/25 hover:-translate-y-0.5"
           >
             {t('demo_cta')} →

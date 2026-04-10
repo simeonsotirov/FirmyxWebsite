@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/lib/LanguageContext';
+import { APP_URL } from '@/lib/constants';
 
 export default function CTASection() {
   const { t } = useLanguage();
@@ -17,7 +18,7 @@ export default function CTASection() {
           {t('cta_sub')}
         </p>
         <a
-          href="https://app.firmyx.com/register"
+          href={`${APP_URL}/register`}
           className="inline-flex items-center gap-2 px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-600 hover:bg-blue-50 shadow-2xl shadow-blue-900/30 transition-all hover:-translate-y-0.5"
         >
           {t('cta_button')} →

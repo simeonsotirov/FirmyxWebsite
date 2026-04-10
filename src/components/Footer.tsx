@@ -3,6 +3,7 @@
 import { X, Globe, Mail } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 import Logo from '@/components/Logo';
+import { APP_URL } from '@/lib/constants';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -26,7 +27,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#features" className="hover:text-white transition-colors">{t('footer_features')}</a></li>
               <li><a href="#faq" className="hover:text-white transition-colors">{t('footer_faq')}</a></li>
-              <li><a href="https://app.firmyx.com/register" className="hover:text-white transition-colors">{t('footer_get_started')}</a></li>
+              <li><a href={`${APP_URL}/register`} className="hover:text-white transition-colors">{t('footer_get_started')}</a></li>
             </ul>
           </div>
 

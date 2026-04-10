@@ -2,6 +2,7 @@
 
 import { Play } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
+import { APP_URL } from '@/lib/constants';
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -26,7 +27,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://app.firmyx.com/register"
+                href={`${APP_URL}/register`}
                 className="px-6 py-3 text-base font-semibold rounded-xl bg-blue-500 hover:bg-blue-600 text-white shadow-lg shadow-blue-500/25 transition-all hover:shadow-blue-500/40 hover:-translate-y-0.5 text-center"
               >
                 {t('hero_cta')}
@@ -50,7 +51,7 @@ export default function HeroSection() {
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
                 <div className="w-3 h-3 rounded-full bg-green-500" />
                 <div className="flex-1 mx-4 px-3 py-1 rounded bg-gray-700 text-gray-400 text-xs">
-                  app.firmyx.com
+                  app.firmyxapp.com
                 </div>
               </div>
 

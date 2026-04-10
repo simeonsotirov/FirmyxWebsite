@@ -5,6 +5,7 @@ import { Menu, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useLanguage } from '@/lib/LanguageContext';
 import Logo from '@/components/Logo';
+import { APP_URL } from '@/lib/constants';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -66,7 +67,7 @@ export default function Header() {
               </button>
             )}
             <a
-              href="https://app.firmyx.com/register"
+              href={`${APP_URL}/register`}
               className="px-4 py-2 text-sm font-semibold rounded-lg bg-blue-500 hover:bg-blue-600 text-white transition-colors shadow-sm"
             >
               {t('nav_cta')}
@@ -110,7 +111,7 @@ export default function Header() {
                   </button>
                 </div>
                 <a
-                  href="https://app.firmyx.com/register"
+                  href={`${APP_URL}/register`}
                   className="text-center px-4 py-2 text-sm font-semibold rounded-lg bg-blue-500 text-white"
                 >
                   {t('nav_cta')}

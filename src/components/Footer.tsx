@@ -2,6 +2,7 @@
 
 import { X, Globe, Mail } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
+import Logo from '@/components/Logo';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -13,8 +14,8 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <a href="/" className="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent block mb-3">
-              Firmyx
+            <a href="/" aria-label="Firmyx home" className="block mb-3">
+              <Logo size="sm" />
             </a>
             <p className="text-sm leading-relaxed">{t('footer_desc')}</p>
           </div>
@@ -24,7 +25,6 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">{t('footer_product')}</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#features" className="hover:text-white transition-colors">{t('footer_features')}</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">{t('footer_pricing')}</a></li>
               <li><a href="#faq" className="hover:text-white transition-colors">{t('footer_faq')}</a></li>
               <li><a href="https://app.firmyx.com/register" className="hover:text-white transition-colors">{t('footer_get_started')}</a></li>
             </ul>

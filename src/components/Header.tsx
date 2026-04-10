@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useLanguage } from '@/lib/LanguageContext';
+import Logo from '@/components/Logo';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,8 +31,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
-            Firmyx
+          <a href="/" aria-label="Firmyx home">
+            <Logo size="md" />
           </a>
 
           {/* Desktop Nav */}
@@ -41,9 +42,6 @@ export default function Header() {
             </a>
             <a href="#how-it-works" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               {t('nav_how_it_works')}
-            </a>
-            <a href="#pricing" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-              {t('nav_pricing')}
             </a>
             <a href="#faq" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               {t('nav_faq')}
@@ -100,9 +98,6 @@ export default function Header() {
             </a>
             <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500">
               {t('nav_how_it_works')}
-            </a>
-            <a href="#pricing" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500">
-              {t('nav_pricing')}
             </a>
             <a href="#faq" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500">
               {t('nav_faq')}

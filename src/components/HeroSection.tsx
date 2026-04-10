@@ -16,10 +16,6 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
           {/* Left: Text */}
           <div className="flex flex-col gap-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs font-semibold w-fit">
-              {t('hero_badge')}
-            </div>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight">
               {t('hero_headline')}
             </h1>

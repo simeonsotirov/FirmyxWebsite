@@ -11,7 +11,6 @@ export const translations = {
     nav_cta: 'Start Free Trial',
 
     // Hero
-    hero_badge: 'Used by 1,200+ businesses across 15 industries',
     hero_headline: 'Stop guessing. Know exactly where your business stands.',
     hero_sub: 'Upload your financial data and get a clear health score, 12-month forecast, and actionable recommendations — in under 2 minutes.',
     hero_cta: 'Try It Free — No Card Required',
@@ -139,7 +138,6 @@ export const translations = {
     nav_cta: 'Безплатен пробен период',
 
     // Hero
-    hero_badge: 'Използван от над 1 200 бизнеса в 15 индустрии',
     hero_headline: 'Спри да гадаеш. Знай точно къде стои бизнесът ти.',
     hero_sub: 'Качи финансовите си данни и получи ясна оценка на здравето, 12-месечна прогноза и конкретни препоръки — за под 2 минути.',
     hero_cta: 'Пробвай безплатно — без карта',

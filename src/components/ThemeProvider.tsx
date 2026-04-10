@@ -4,7 +4,9 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   return (
-    <NextThemesProvider attribute="class" defaultTheme="light" enableSystem>
+    // defaultTheme="system" → automatically matches the user's OS/browser
+    // preference (light or dark). The user can still override it via the toggle.
+    <NextThemesProvider attribute="class" defaultTheme="system" enableSystem>
       {children}
     </NextThemesProvider>
   );

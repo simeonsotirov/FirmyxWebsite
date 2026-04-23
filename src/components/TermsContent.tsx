@@ -99,7 +99,7 @@ export default function TermsContent() {
           <h2 className="text-2xl font-bold text-white mt-12 mb-4">13. ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚</h2>
           <p className="text-base text-gray-300 leading-relaxed mb-6">
             ÐŸÑ€Ð¸ Ð²ÑŠÐ¿Ñ€Ð¾ÑÐ¸:{' '}
-            <a href="mailto:support@firmyx.com" className="text-blue-400 hover:underline">support@firmyx.com</a>
+            <a href="mailto:atanas.k.kanev@gmail.com" className="text-blue-400 hover:underline">atanas.k.kanev@gmail.com</a>
           </p>
         </section>
       </article>
@@ -199,7 +199,7 @@ export default function TermsContent() {
         <h2 className="text-2xl font-bold text-white mt-12 mb-4">13. Contact</h2>
         <p className="text-base text-gray-300 leading-relaxed mb-6">
           Questions:{' '}
-          <a href="mailto:support@firmyx.com" className="text-blue-400 hover:underline">support@firmyx.com</a>
+          <a href="mailto:atanas.k.kanev@gmail.com" className="text-blue-400 hover:underline">atanas.k.kanev@gmail.com</a>
         </p>
       </section>
     </article>

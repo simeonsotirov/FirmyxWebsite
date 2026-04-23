@@ -80,14 +80,14 @@ export default function PrivacyContent() {
           </ul>
           <p className="text-base text-gray-300 leading-relaxed mb-6">
             Ð—Ð° ÑƒÐ¿Ñ€Ð°Ð¶Ð½ÑÐ²Ð°Ð½Ðµ Ð½Ð° Ð¿Ñ€Ð°Ð²Ð°Ñ‚Ð° ÑÐ¸:{' '}
-            <a href="mailto:support@firmyx.com" className="text-blue-400 hover:underline">support@firmyx.com</a>
+            <a href="mailto:atanas.k.kanev@gmail.com" className="text-blue-400 hover:underline">atanas.k.kanev@gmail.com</a>
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-white mt-12 mb-4">8. ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚</h2>
           <p className="text-base text-gray-300 leading-relaxed mb-6">
-            <a href="mailto:support@firmyx.com" className="text-blue-400 hover:underline">support@firmyx.com</a>
+            <a href="mailto:atanas.k.kanev@gmail.com" className="text-blue-400 hover:underline">atanas.k.kanev@gmail.com</a>
           </p>
         </section>
       </article>
@@ -168,14 +168,14 @@ export default function PrivacyContent() {
         </ul>
         <p className="text-base text-gray-300 leading-relaxed mb-6">
           To exercise your rights:{' '}
-          <a href="mailto:support@firmyx.com" className="text-blue-400 hover:underline">support@firmyx.com</a>
+          <a href="mailto:atanas.k.kanev@gmail.com" className="text-blue-400 hover:underline">atanas.k.kanev@gmail.com</a>
         </p>
       </section>
 
       <section>
         <h2 className="text-2xl font-bold text-white mt-12 mb-4">8. Contact</h2>
         <p className="text-base text-gray-300 leading-relaxed mb-6">
-          <a href="mailto:support@firmyx.com" className="text-blue-400 hover:underline">support@firmyx.com</a>
+          <a href="mailto:atanas.k.kanev@gmail.com" className="text-blue-400 hover:underline">atanas.k.kanev@gmail.com</a>
         </p>
       </section>
     </article>

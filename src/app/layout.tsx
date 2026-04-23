@@ -18,7 +18,7 @@ const jsonLd = {
       url: 'https://firmyx.com',
       contactPoint: {
         '@type': 'ContactPoint',
-        email: 'support@firmyx.com',
+        email: 'atanas.k.kanev@gmail.com',
         contactType: 'customer support',
       },
     },

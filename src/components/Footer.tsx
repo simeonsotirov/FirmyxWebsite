@@ -46,9 +46,9 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">{t('footer_contact')}</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:support@firmyx.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <a href="mailto:atanas.k.kanev@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
                   <Mail size={15} />
-                  support@firmyx.com
+                  atanas.k.kanev@gmail.com
                 </a>
               </li>
               <li>
